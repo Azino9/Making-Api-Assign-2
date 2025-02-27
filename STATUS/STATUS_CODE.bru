@@ -1,0 +1,22 @@
+meta {
+  name: STATUS_CODE
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:9125/status-info?code=200
+  body: json
+  auth: none
+}
+
+params:query {
+  code: 200
+}
+
+body:json {
+  {
+    "code" :"200",
+    "name" : "Mohit"
+  }
+}
